@@ -109,6 +109,7 @@ body {
 .attribution {
   font-size: 1.1rem;
   color: #000;
+  text-align: center;
 }
 .attribution__link:hover,
 .attribution__link:focus { color: #777; }
