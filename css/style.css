@@ -3,6 +3,7 @@ html {
   box-sizing: border-box;
   block-size: 100%;
   font-size: 62.5%;
+  line-height: 1.15;
 }
 
 *,
@@ -22,7 +23,84 @@ body { inline-size: 100%; }
 
 /* ---- Main Code ---- */
 body {
-  /* font-family: 'Big Shoulders Display', cursive; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-block-size: 100%;
   font: normal 400 1.5rem "Lexend Deca", sans-serif;
   color: #fff;
+  background-color: #f2f2f2;
+  padding: 8.8rem 2.4rem;
 }
+
+/* ---- Component title ---- */
+.title {
+  margin-block-end: 2rem;
+  font-size: 2rem;
+  color: #000;
+  text-align: center;
+}
+
+/* ---- The container that contains the "Card" block ---- */
+.container {
+  margin-block-end: 2rem;
+  border-radius: .8rem;
+  overflow: hidden;
+}
+
+/* ---- Block "Card" ---- */
+.card {
+  inline-size: 32.8rem;
+  padding: 4.8rem 5rem;
+}
+.card__icon {
+  inline-size: 64px;
+  block-size: 40px;
+  margin-block-end: 3rem;
+}
+.card__title {
+  margin-block-end: 2.5rem;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 4rem;
+  color: #f2f2f2;
+  text-transform: uppercase;
+}
+.card__text {
+  margin-block-end: 2.4rem;
+  line-height: 1.7;
+  opacity: .75;
+}
+.card__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inline-size: 14.6rem;
+  block-size: 4.8rem;
+  text-decoration: none;
+  background-color: #f2f2f2;
+  border-radius: 4rem;
+}
+.card__link:hover,
+.card__link:focus {
+  color: #f2f2f2;
+  background-color: transparent;
+  border: .2rem solid #f2f2f2;
+}
+
+/* ---- Modifiers ---- */
+.card--bgcolor-orange { background-color: #e38826; }
+.card--bgcolor-blue { background-color: #006970; }
+.card--bgcolor-dark { background-color: #004241; }
+
+.card__link--color-orange { color: #e38826; }
+.card__link--color-blue { color: #006970; }
+.card__link--color-dark { color: #004241; }
+
+/* ---- Block "Attribution" ---- */
+.attribution {
+  font-size: 1.1rem;
+  color: #000;
+}
+.attribution__link:hover,
+.attribution__link:focus { color: #777; }
